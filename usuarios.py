@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 import os
 
-usuarios = Flask(__name__)
+app = Flask(__name__)
 
 usuarios = [
     {"id": 1, "nome": "Ana"},
