@@ -28,7 +28,7 @@ def home():
 @app.route("/usuarios", methods=["GET"])
 def listar_usuarios():
     return jsonify(usuarios)
-
+    
 @app.route('/usuarios', methods=['POST'])
 def criar_usuario():
     novo = request.json
