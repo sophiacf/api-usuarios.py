@@ -21,11 +21,11 @@ usuarios = [
     {"id": 15, "nome": "Olívia"},
 ]
 
-@app.route("/usuarios", methods=["GET"])
+@app.route("/", methods=["GET"])
 def home():
     return jsonify({"mensagem": "API de usuarios - Acesse /usuarios"})
 
-@app.route("/", methods=["GET"])
+@app.route("/usuarios", methods=["GET"])
 def listar_usuarios():
     return jsonify(usuarios)
 
